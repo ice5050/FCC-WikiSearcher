@@ -23,4 +23,11 @@ img {
 
 body {
   font-weight: 400;
+
+  color: #616161;
+  background: linear-gradient(rgba(215, 215, 215, .80), rgba(215, 215, 215, .80)), url('../images/bg.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
