@@ -21,13 +21,93 @@ img {
   box-sizing: content-box;
 }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 body {
   font-weight: 400;
 
   color: #616161;
-  background: linear-gradient(rgba(215, 215, 215, .80), rgba(215, 215, 215, .80)), url('../images/bg.jpeg');
+  background: linear-gradient(rgba(215, 215, 215, .50), rgba(215, 215, 215, .50)), url('../images/bg.jpeg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+}
+
+.hide {
+  display: none;
+}
+
+.wrapper {
+}
+
+.header {
+  transition: margin .2s ease;
+  margin: 30vh 0 3em 0;
+}
+
+.header p {
+  font-family: 'Roboto';
+  font-size: 2.25em;
+
+  margin: 0;
+
+  text-align: center;
+
+  color: #1976d2;
+}
+
+.wrapper-collapsed .header {
+  margin: 1em 0;
+}
+
+.search {
+  margin-bottom: 3em;
+}
+
+.search div{
+  position: relative;
+}
+
+.search input {
+  border-radius: 1em;
+  outline: none;
+  border: 1px solid #616161;
+  padding: .3em 1em;
+  background-color: #BDBDBD;
+  width: 100%;
+}
+
+.search i.fa {
+  position: absolute;
+  top: 6px;
+  right: 12px;
+}
+
+.loading p{
+  font-size: 3em;
+  color: #1976d2;
+  text-align: center;
+}
+
+.result {
+  border: 1px solid #616161;
+  background-color: #E0E0E0;
+  border-radius: 1em;
+  padding: 1em 1em .5em 1em;
+  margin-bottom: 1em;
+}
+
+.result .heading {
+  margin: 0;
+  color: #1976d2;
+  font-size: 1.5em;
+}
+
+.result .description {
+  color: #616161;
+  margin-top: 1em;
 }
